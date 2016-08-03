@@ -1,0 +1,472 @@
+/*
+Theme Name:     Quatro Rodas - Teste Abril
+Description:    Site responsivo Quatro Rodas
+Author:         Adriano de Oliveira
+Author URI:     https://www.linkedin.com/in/webadriano
+Version:        1.0
+*/
+
+* {margin: 0;padding: 0;}
+html,body {background: #e6e6e6; width: 100%; height: 100%;font-size: 100%;}
+::selection {background: #ed1c24;color: #FFF;}
+a {text-decoration: none;border: 0;}
+img {border: 0;}
+ul li {list-style: none;}
+p, h1, h2, h3, h4, h5, h6 {font-weight: normal;}
+header, section, article, main, nav, figure, input, textarea, form, footer {position: relative; margin: 0; padding: 0;}
+button, input, textarea {-webkit-appearance: none;-moz-appearance: none;-o-appearance: none;appearance: none;background: none;border: 0;border-radius: 0;}
+figure img {width: 100%;}
+
+
+@media screen and (min-width: 1320px) {
+	.ads-top {
+		width: 729px;
+		margin: 12px auto;
+	}
+
+	.base {
+		width: 1320px;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	header {
+		width:100%;
+		background: #ed1c24;
+		float: left;
+	}
+
+	header .logo {
+		width: 187px;
+		height: 43px;
+		float: left;
+		margin: 18px 0 0 18px;
+	}
+
+	header .formSearch {
+		width: 132px;
+		float: right;
+		height: 100%;
+		margin: 24px 92px 0 0;
+	}
+	header .formSearch input {
+		width: 100%;
+		height: 32px;
+		background: #fff url(imgs/ico-lupa.png) center right no-repeat;
+		font: normal 300 12px Helvetica, Arial, sans-serif;
+		color: #a3a3a3;
+		text-indent: 13px;
+	}
+	header .formSearch input::-webkit-input-placeholder {color: #a3a3a3; text-transform: uppercase;}
+	header .formSearch input:-moz-placeholder {color: #a3a3a3; text-transform: uppercase;}
+	header .formSearch input::-moz-placeholder {color: #a3a3a3; text-transform: uppercase;}
+	header .formSearch input:-ms-input-placeholder {color: #a3a3a3; text-transform: uppercase;}
+
+	header nav.menu-principal {
+		float: right;
+		margin-right: 15px;
+	}
+	header nav.menu-principal > ul {
+		float: left;
+		position: relative;
+	}
+	header nav.menu-principal > ul > li {
+		display: inline-block;
+		float: left;
+	}
+	header nav.menu-principal > ul > li > a {
+		font: normal 700 14px 'Dosis', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 35px 31px 30px 14px;
+		float: left;
+		position: relative;
+	}
+
+	header nav.menu-principal > ul > li > a:hover {
+		background: #242424;
+	}
+
+	header nav.menu-principal > ul > li > a.ativo {
+		background: #242424;
+	}
+
+	header nav.menu-principal > ul > li > a:after {
+		content: '>';
+		font: normal 500 20px 'Dosis', sans-serif;
+	    color: #fff;
+	    position: absolute;
+	    top: 40px;
+	    right: 4px;
+	    width: 0;
+	    height: 0;
+	    transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    -webkit-transform: rotate(90deg);
+	}
+
+	.hover-teste, .hover-carros {
+		width: 100%;
+		float: left;
+		background: #242424;
+		border-bottom: 2px solid #ed1c24;
+		display: none;
+		position: absolute;
+		top: 189px;
+		left: 0;
+		z-index: 99;
+	}
+
+	.hover-teste nav > ul  {
+		width: 175px;
+		float: left;
+		height: 207px;
+		background: #474747;
+		padding-top: 23px;
+	}
+
+	.hover-teste nav > ul > li {
+		width: 100%;
+		display: block;
+	}
+
+	.hover-teste nav > ul > li > a {
+		font: normal 700 15px 'Asap', sans-serif;
+		width: calc(100% - 20px);
+		color: #fff;
+		text-align: right;
+		float: left;
+		padding: 10px 20px 10px 0;
+		position: relative;
+	}
+
+	.hover-teste nav > ul > li > a:hover{
+		color: #959595;
+	}
+
+	.hover-teste nav > ul > li:first-child > a {
+		background: #242424;
+	}
+
+	.hover-teste nav > ul > li:first-child > a:after{
+		content: '❯';
+		font: normal 500 15px 'Dosis', sans-serif;
+	    color: #fff;
+	    position: absolute;
+	    top:9px;
+	    right: 6px;
+	}
+
+	.hover-teste .todos-testes {
+		width: calc(100% - 175px);
+		float: right;
+		padding-top: 23px;
+	}
+
+	.hover-teste .todos-testes li {
+		float: left;
+		display: inline-block;
+		margin: 0 11px;
+		width: 200px;
+	}
+
+	.hover-teste .todos-testes li:first-child {
+		margin-left: 28px;
+	}
+
+	.hover-teste .todos-testes li a {
+		position: relative;
+	}
+
+	.hover-teste .todos-testes li a img{
+		width: 200px;
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out
+		opacity:1;
+	}
+
+	.hover-teste .todos-testes li a .titulo-e-subtitulo {
+		position: absolute;
+		bottom: -108px;
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out
+		height:107px;
+		float: left;
+	}
+
+	.hover-teste .todos-testes li a h3 {
+		font: normal 700 15px 'Asap', sans-serif;
+		width: 100%;
+		text-align: left;
+		color: #fff;
+		line-height: 20px;
+	}
+
+	.hover-teste .todos-testes li a h4 {
+		font: normal 700 15px Helvetica, Arial, sans-serif;
+		width: 100%;
+		text-align: left;
+		color: #fff;
+		line-height: 20px;
+		color: #ed1c24;
+		line-height: 22px;
+		opacity: 0;
+		-webkit-transition: all 0.25s ease-in-out;
+		-moz-transition: all 0.25s ease-in-out;
+		-ms-transition: all 0.25s ease-in-out;
+		transition: all 0.25s ease-in-out
+	}
+
+	.hover-teste .todos-testes li a:hover img {
+		opacity: 0;
+	}
+	.hover-teste .todos-testes li a:hover .titulo-e-subtitulo {
+		bottom: 5px;
+	}
+	.hover-teste .todos-testes li a:hover h4 {
+		opacity: 1;
+	}
+
+	.hover-carros .left {
+		width: 217px;
+		height: 160px;
+		float: left;
+		padding-top: 18px;
+	}
+
+	.hover-carros .left a {
+		font: normal 700 15px 'Asap', sans-serif;
+	    color: #fff;
+	    background: #474747;
+	    padding: 10px 25px;
+	    float: left;
+	    margin-left: 15px;
+	}
+
+	.hover-carros a:hover  {
+		opacity: 0.8;
+	}
+
+	.hover-carros ul {
+		padding-top: 23px;
+		float: left;
+	    margin-left: 20px;
+	    -moz-column-count: 5;
+	    -moz-column-gap: 150px;
+	    -webkit-column-count: 5;
+	    -webkit-column-gap: 150px;
+	    column-count: 5;
+	    column-gap: 145px;
+	    width: calc(100% - 326px);
+	}
+
+	.hover-carros ul li {
+		margin: 22px 0;
+	}
+
+	.hover-carros ul li:first-child {
+		margin-top: 0;
+	}
+
+	.hover-carros ul li a{
+		font: normal 700 15px 'Asap', sans-serif;
+		color: #fff;
+		text-align: left;
+	}
+
+	.sub-menu {
+		width: 100%;
+		padding: 5px 0;
+		background: url(imgs/bg-sub-menu.jpg) left center no-repeat;
+		float: left;
+	}
+
+	.sub-menu .mais-acessados{
+		font: normal 600 14px 'Dosis', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		margin-left: 20px;
+		float: left;
+		margin-right: 36px;
+	}
+
+	.sub-menu ul {
+		float: left;
+		position: relative;
+	}
+
+	.sub-menu ul li {
+		float: left;
+		display: inline-block;
+	}
+
+	.sub-menu ul li a {
+		font: normal 600 14px 'Dosis', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		margin-left: 33px;
+	}
+
+	.mosaico {
+		float: left;
+		margin-top: 10px;
+		position: relative;
+		z-index: 10;
+	}
+
+	#menu-mobile, .btn-search-mobile, .home-mobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1319px) {
+	.ads-top {
+		width: calc(100% - 10px);
+		max-width: 729px;
+		margin: 6px auto;
+	}
+
+	.base {
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+	}
+
+	header {
+		width:100%;
+		background: #ed1c24;
+		float: left;
+		position: relative;
+	}
+
+	header .logo {
+		width: 150px;
+		margin: 11px auto;
+	}
+
+	.hover-teste, .hover-carros, .sub-menu, .mosaico {
+		display: none;
+	}
+
+	.responsive-menu {
+		position: absolute;
+		width: 20px;
+		height: 16px;
+		background: url(imgs/bt-responsive-menu.png) center center no-repeat;
+		top: 50%;
+		right: 0px;
+		transform: translateY(-50%);
+		padding: 20px;
+	}
+
+	.responsive-menu-ativo {
+		position: absolute;
+		width: 20px;
+		height: 16px;
+		background: #d41f1f url(imgs/bt-responsive-menu-fechar.png) center center no-repeat;
+		top: 50%;
+		right: 0px;
+		transform: translateY(-50%);
+		padding: 20px;
+	}
+
+	nav.menu-principal {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 58px;
+		width: 100%;
+		height: auto;
+		z-index: 100;
+		background: #d41f1f;
+	}
+
+	nav.menu-principal > ul > li {
+		float: left;
+		width: 100%;
+		font: normal 300 1.125em/48px 'Roboto', sans-serif;
+		border-bottom: 1px solid #c21c1c;
+	}
+
+	nav.menu-principal > ul > li:last-child {
+		border: 0;
+	}
+
+	nav.menu-principal > ul > li a {
+		font: normal 700 14px 'Dosis', sans-serif;
+		color: #fff;
+		text-transform: uppercase;
+		padding: 15px 20px;
+		width: calc(100% - 40px);
+		float: left;
+		position: relative;
+	}
+
+	nav.menu-principal > ul > li > a:after {
+		content: '❯';
+		font: normal 700 14px 'Dosis', sans-serif;
+	    color: #fff;
+	    position: absolute;
+	    top: 45%;
+	    right: 15px;
+	    width: 0;
+	    height: 0;
+	    transform: rotate(90deg);
+	    -moz-transform: rotate(90deg);
+	    -ms-transform: rotate(90deg);
+	    -webkit-transform: rotate(90deg);
+	}
+
+	.btn-search-mobile {
+		position: absolute;
+		top: 50%;
+		left: 0px;
+		transform: translateY(-50%);
+		padding: 20px;
+	}
+
+	.ativo {
+		background: #d41f1f;
+	}
+
+	header .formSearch {
+		width: 100%;
+		padding: 11px 0;
+		background: #d41f1f;
+		position: absolute;
+		text-align: center;
+		display: none;
+		z-index: 80;
+	}
+
+	header .formSearch input {
+		width: calc(100% - 24px);
+		height: 32px;
+		background: #fff center right no-repeat;
+		font: normal 300 12px Helvetica, Arial, sans-serif;
+		color: #a3a3a3;
+		text-indent: 13px;
+		margin: 0 auto;
+		border-radius: 5px;
+	}
+	header .formSearch input::-webkit-input-placeholder {color: #a3a3a3; text-transform: uppercase;}
+	header .formSearch input:-moz-placeholder {color: #a3a3a3; text-transform: uppercase;}
+	header .formSearch input::-moz-placeholder {color: #a3a3a3; text-transform: uppercase;}
+	header .formSearch input:-ms-input-placeholder {color: #a3a3a3; text-transform: uppercase;}
+
+	.home-mobile {
+		width: 100%;
+		margin:10px auto;
+		text-align: center;
+		float: left;
+	}
+
+	.home-mobile img{
+		max-width: 320px;
+	}
+}
